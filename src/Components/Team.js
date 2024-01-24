@@ -1,10 +1,8 @@
 import React from "react";
 
-import Man1 from "../Assets/m1.png";
 import Man2 from "../Assets/m2.jpg";
 import Man3 from "../Assets/m3.jpg";
 import Man4 from "../Assets/m4.jpg";
-import Man5 from "../Assets/m5.png";
 
 const Team = () => {
   const teamInfoData = [

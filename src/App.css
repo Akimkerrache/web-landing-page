@@ -255,8 +255,11 @@ nav {
   flex-direction: column;
   padding-left: 50px;
 }
+.apps-section-text-container h1 {
+  font-size: 40px;
+}
 .about-section-text-container h1 {
-  font-size: 45px;
+  font-size: 35px;
 }
 .primary-subheading {
   font-weight: 700;
@@ -346,11 +349,11 @@ nav {
 }
 .contact-page-wrapper h2 {
   max-width: 900px !important;
-  font-size: 30px;
+  font-size: 25px;
 }
 .contact-page-wrapper h1 {
   max-width: 900px !important;
-  font-size: 40px;
+  font-size: 45px;
 }
 .contact-page-wrapper {
   display: flex;
@@ -486,7 +489,7 @@ nav {
 }
 .work-section-top h1 {
   max-width: 750px !important;
-  font-size: 50px;
+  font-size: 45px;
 }
 .work-section-top {
   display: flex;
@@ -631,6 +634,21 @@ nav {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+  }
+  .about-section-text-container h1 {
+    font-size: 28px;
+  }
+  .apps-section-text-container h1 {
+    font-size: 28px;
+  }
+  .work-section-top h1 {
+    font-size: 28px;
+  }
+  .contact-page-wrapper {
+    padding: 0 15px;
+  }
+  .contact-page-wrapper h1 {
+    font-size: 28px;
   }
   .secondary-button {
     font-size: 1rem;
