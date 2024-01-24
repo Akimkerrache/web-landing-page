@@ -21,7 +21,7 @@ const AppsSection = () => {
           Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
           facilisis at fringilla quam.
         </p>
-        <div className="about-buttons-container">
+        <div className="apps-buttons-container">
           <button className="android-btn">
             Android
             <GrAndroid />
