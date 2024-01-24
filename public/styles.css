@@ -1,0 +1,32 @@
+#fixed-circle {
+  position: fixed;
+  width: 30px; /* Adjust the width and height as needed */
+  height: 30px;
+  background-color: #007bff33; /* Blue fill color */
+  border: 1.5px solid #ff00aabe; /* Red border color */
+  border-radius: 50%;
+  top: 50%; /* Adjust the positioning as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+#mouse-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998; /* Ensure it's below the fixed circular element */
+}
+
+.mouse-trail-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff; /* Blue fill color */
+  border: 2px solid #ff0000; /* Red border color */
+  border-radius: 50%;
+  opacity: 0.6;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s, opacity 0.3s;
+}
