@@ -1,30 +1,30 @@
 import React from "react";
-import Secure from "../Assets/w1.png";
-import Money from "../Assets/w2.png";
-import Location from "../Assets/w3.png";
-import Calculate from "../Assets/w4.png";
+
+import Man1 from "../Assets/m1.png";
+import Man2 from "../Assets/m2.jpg";
+import Man3 from "../Assets/m3.jpg";
+import Man4 from "../Assets/m4.jpg";
+import Man5 from "../Assets/m5.png";
 
 const Team = () => {
   const teamInfoData = [
     {
-      image: Secure,
-      title: "Qualité et Honnêteté",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      image: Man2,
+      title: "Maria Krostav",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci ",
+      job: "CEO Founder",
     },
     {
-      image: Money,
-      title: "Garantie de Remboursement",
+      image: Man3,
+      title: "Alvin Kerr",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      job: "Web Developer",
     },
     {
-      image: Location,
-      title: "Livraison Rapide",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
-    },
-    {
-      image: Calculate,
-      title: "Bonnes Affaires",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      image: Man4,
+      title: "Mandro Prad",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci ",
+      job: "Directeur des Ventes",
     },
   ];
   return (
@@ -40,12 +40,13 @@ const Team = () => {
       </div>
       <div className="work-section-bottom">
         {teamInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
+          <div className="team-section-info" key={data.title}>
+            <div className="team-img">
               <img src={data.image} alt="" />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
+            <h3>{data.job} </h3>
           </div>
         ))}
       </div>

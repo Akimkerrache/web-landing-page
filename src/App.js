@@ -7,6 +7,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import ScrollTop from "./Components/ScrollTop";
 import Team from "./Components/Team";
+import AppsSection from "./Components/AppsSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <About />
       <Work />
+      <AppsSection />
       <Team />
       <Testimonial />
       <Contact />
