@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../Assets/logo.png";
-import { HiOutlineBars3 } from "react-icons/hi2";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -73,11 +73,11 @@ const Navbar = () => {
         <button className="primary-button">Se Connecter</button>
       </div>
       <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        <HiOutlineMenuAlt3 onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 280 }}
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}

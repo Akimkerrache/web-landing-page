@@ -15,6 +15,8 @@ img {
   margin: 0rem auto;
 }
 body {
+  margin: 0;
+  padding: 0;
   max-width: 100%;
   overflow-x: hidden;
   background-color: #ffffff;
@@ -112,6 +114,7 @@ nav {
   cursor: pointer;
 }
 .home-container {
+  margin: 0;
   padding: 0 80px;
   background-image: url("./Assets/home1.png");
   background-size: cover;
@@ -408,7 +411,8 @@ nav {
   max-width: 600px !important;
 }
 .work-section-top h1 {
-  max-width: 700px !important;
+  max-width: 750px !important;
+  font-size: 50px;
 }
 .work-section-top {
   display: flex;
@@ -503,6 +507,9 @@ nav {
     align-items: center;
     justify-content: center;
   }
+  .home-banner-container {
+    padding-top: 50px;
+  }
   .about-section-container {
     flex-direction: column;
   }
@@ -583,7 +590,7 @@ nav {
     margin: 1rem 0rem;
   }
   .App {
-    max-width: 95vw;
+    max-width: 100vw;
   }
 }
 @media (max-width: 600px) {
