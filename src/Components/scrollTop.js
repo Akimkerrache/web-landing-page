@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-const ScrollTop = () => {
+const Scrolltop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    setIsVisible(offset > 100); // Show the button when scrolled down
+    setIsVisible(offset > 100);
   };
 
   const scrollToTop = () => {
@@ -33,4 +33,4 @@ const ScrollTop = () => {
   );
 };
 
-export default ScrollTop;
+export default Scrolltop;
