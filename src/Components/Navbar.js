@@ -11,8 +11,9 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import { Link } from "react-router-dom";
+import { TbLogin2 } from "react-icons/tb";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,18 +24,22 @@ const Navbar = () => {
     {
       text: "Accueil",
       icon: <HomeIcon />,
+      path: "/",
     },
     {
       text: "À propos",
       icon: <InfoIcon />,
-    },
-    {
-      text: "Témoignages",
-      icon: <CommentRoundedIcon />,
+      path: "/about",
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
+      path: "/contact",
+    },
+    {
+      text: "Se Connecter",
+      icon: <TbLogin2 />,
+      path: "https://gcosmosweb.com",
     },
   ];
 
@@ -66,10 +71,9 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Accueil</a>
-        <a href="">À propos</a>
-        <a href="">Témoignages</a>
-        <a href="">Contact</a>
+        <Link to="/">Accueil</Link>
+        <Link to="/about">À propos</Link>
+        <Link to="/contact">Contact</Link>
         <button className="primary-button">Se Connecter</button>
       </div>
       <div className="navbar-menu-container">
@@ -87,7 +91,10 @@ const Navbar = () => {
               <ListItem key={item.text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
+
+                  <Link to={item.path}>
+                    <ListItemText primary={item.text} />
+                  </Link>
                 </ListItemButton>
               </ListItem>
             ))}

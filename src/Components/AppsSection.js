@@ -32,11 +32,13 @@ const AppsSection = () => {
           </button>
         </div>
       </div>
-      <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
-      </div>
-      <div className="apps-section-image-container">
-        <img src={ApptImage} alt="" />
+      <div className="">
+        <div className="about-background-image-container">
+          <img src={AboutBackground} alt="" />
+        </div>
+        <div className="apps-section-image-container">
+          <img src={ApptImage} alt="" />
+        </div>
       </div>
     </div>
   );
