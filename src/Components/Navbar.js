@@ -13,7 +13,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import { Link } from "react-router-dom";
-import { TbLogin2 } from "react-icons/tb";
+import { RiLoginCircleFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -38,8 +38,8 @@ const Navbar = () => {
     },
     {
       text: "Se Connecter",
-      icon: <TbLogin2 />,
-      path: "https://gcosmosweb.com",
+      icon: <RiLoginCircleFill />,
+      path: "https://www.couverture-auto.fr",
     },
   ];
 
@@ -92,6 +92,7 @@ const Navbar = () => {
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
+          className="nav-menu"
         >
           <List>
             {menuOptions.map((item) => (

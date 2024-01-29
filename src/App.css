@@ -76,9 +76,28 @@ nav {
   transition: background-color 0.5s ease-in-out;
   z-index: 1000;
 }
+/* PageTitle.css */
+
+@keyframes moveObject {
+  0% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+.page-title {
+  padding-top: 10%;
+}
 
 .navbar-menu-container {
   display: none;
+}
+.nav-menu {
+  padding-top: 60px;
 }
 .navbar-links-container a {
   margin-right: 3rem;
@@ -118,7 +137,7 @@ nav {
 .home-container {
   margin: 0;
   padding: 0 80px;
-  height: 100vh;
+  height: 90vh;
   background-image: url("./Assets/home1.png");
   background-size: cover;
   background-position: center;
@@ -216,15 +235,14 @@ nav {
 }
 
 .about-section-container {
-  margin-top: 20rem;
+  margin-top: 10rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .apps-section-container {
-  margin-top: 20rem;
-
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -617,10 +635,10 @@ nav {
 /* ContactSection.css */
 
 .contact-section {
-  margin-top: 100px;
+  margin-top: 20px;
   display: block;
   align-items: center;
-  padding: 80px 100px;
+  padding: 30px 100px;
 }
 .contact-sec1 {
   margin-top: 100px;
@@ -714,6 +732,7 @@ textarea {
 }
 @media (max-width: 800px) {
   .home-container {
+    height: auto;
     padding: 0 60px;
   }
   nav {
@@ -756,7 +775,11 @@ textarea {
     text-align: center;
     max-width: 80%;
   }
-  .home-text-section,
+  .home-text-section {
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+  }
   .about-section-text-container {
     justify-content: center;
     align-items: center;
@@ -838,6 +861,7 @@ textarea {
     max-width: 100vw;
   }
   .apps-section-container {
+    margin-top: 100px;
     padding: 0 15px;
     display: block;
   }
@@ -845,6 +869,7 @@ textarea {
 @media (max-width: 600px) {
   .home-container {
     padding: 0 20px;
+    padding-bottom: 50px;
   }
   .home-bannerImage-container,
   .about-background-image-container {
@@ -854,12 +879,16 @@ textarea {
   nav {
     padding: 10px 20px;
   }
+  .page-title {
+    padding-top: 70%;
+  }
   .hsection {
+    margin-top: 0;
     padding: 0 15px;
   }
   .contact-section {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 10px 20px;
   }
 
   .map-section {
