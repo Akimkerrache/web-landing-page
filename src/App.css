@@ -1,3 +1,5 @@
+@import "~leaflet/dist/leaflet.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -374,14 +376,15 @@ nav {
   margin: 6rem 0rem;
 }
 .contact-form-container {
-  background-color: white;
-  max-width: 700px;
+  background-color: rgba(73, 2, 112, 0.146);
+  max-width: 500px;
   width: 100%;
   margin-top: 3rem;
-  display: flex;
+  display: block;
   align-items: center;
-  padding: 1rem;
-  border-radius: 5rem;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .contact-form-container input {
   flex: 1;
@@ -611,6 +614,91 @@ nav {
   background-color: #000323;
   color: #e8e8e8;
 }
+/* ContactSection.css */
+
+.contact-section {
+  margin-top: 100px;
+  display: block;
+  align-items: center;
+  padding: 80px 100px;
+}
+.contact-sec1 {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10px;
+  justify-content: center;
+}
+
+.map-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-data h2,
+.map-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.contact-data div {
+  margin-bottom: 20px;
+}
+
+.contact-data h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-data ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-data li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.map-section {
+  height: 500px;
+  position: relative;
+  border: 3px solid #0dbefe;
+  border-radius: 15px;
+}
+.map-section button {
+  margin: 5px 10px;
+}
+.contact-data {
+  width: 100%;
+  padding: 20px;
+  border-left: 5px #007bff solid;
+  border-radius: 10px;
+}
+
+.contact-form {
+  max-width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
 @media (max-width: 1000px) {
   .navbar-links-container a {
@@ -723,7 +811,7 @@ nav {
     margin-top: 1rem !important;
   }
   .contact-form-container {
-    padding: 0.5rem !important;
+    padding: 20px !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -768,6 +856,20 @@ nav {
   }
   .hsection {
     padding: 0 15px;
+  }
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .map-section {
+    margin-right: 0;
+    width: 100%;
+  }
+  .contact-sec1 {
+    display: block;
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 

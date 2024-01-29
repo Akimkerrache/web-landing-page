@@ -74,7 +74,14 @@ const Navbar = () => {
         <Link to="/">Accueil</Link>
         <Link to="/about">À propos</Link>
         <Link to="/contact">Contact</Link>
-        <button className="primary-button">Se Connecter</button>
+        <button
+          className="primary-button"
+          onClick={() =>
+            window.open("https://www.couverture-auto.fr/", "_blank")
+          }
+        >
+          Se Connecter
+        </button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineMenuAlt3 onClick={() => setOpenMenu(true)} />
