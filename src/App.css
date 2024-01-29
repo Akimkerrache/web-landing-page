@@ -635,7 +635,6 @@ nav {
 /* ContactSection.css */
 
 .contact-section {
-  margin-top: 20px;
   display: block;
   align-items: center;
   padding: 30px 100px;
@@ -685,6 +684,7 @@ nav {
   position: relative;
   border: 3px solid #0dbefe;
   border-radius: 15px;
+  box-shadow: 0px 8px 8px 10px rgba(83, 83, 83, 0.208);
 }
 .map-section button {
   margin: 5px 10px;

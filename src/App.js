@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer";
-import Scrolltop from "./Components/Scrolltop";
-
+import Scrolltop from "./Components/Scrolltop.js";
 import Home from "./Components/Home/Home";
 
 function App() {
